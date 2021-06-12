@@ -1,0 +1,1 @@
+media-sound/audacity -jack -ogg -vorbis -portmidi -portsmf

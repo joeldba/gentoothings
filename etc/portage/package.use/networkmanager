@@ -1,0 +1,1 @@
+net-misc/networkmanager -teamd -wext -modemmanager -ofono -resolvconf -ovs -ppp
