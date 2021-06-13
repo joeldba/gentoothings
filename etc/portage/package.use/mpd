@@ -1,1 +1,1 @@
-media-sound/mpd -cdio -cue -curl -fifo -gme -jack -mms -nfs -sid -soundcloud -vorbis -zip -wildmidi -opus -faad -fluidsynth -network -samba -upnp 
+media-sound/mpd fifo -cdio -cue -curl -gme -jack -mms -nfs -sid -soundcloud -vorbis -zip -wildmidi -opus -faad -fluidsynth -network -samba -upnp 
