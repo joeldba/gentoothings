@@ -8,3 +8,4 @@ games-util/game-device-udev-rules ~amd64
 sys-process/bashtop ~amd64
 games-fps/gzdoom ~amd64
 media-libs/zmusic ~amd64
+games-action/minecraft-launcher ~amd64
