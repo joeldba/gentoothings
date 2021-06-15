@@ -1,1 +1,1 @@
-app-editors/vim -racket
+app-editors/vim -gpm -lua -perl -racket -ruby -sound 
