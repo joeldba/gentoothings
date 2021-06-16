@@ -1,1 +1,1 @@
-dev-vcs/git -emacs -tk -xinetd -subversion -ppcshal -perl -pcre
+dev-vcs/git -tk -xinetd -subversion -ppcshal -perl -pcre
