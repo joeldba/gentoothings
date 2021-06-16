@@ -1,1 +1,0 @@
-net-misc/networkmanager wifi -teamd -modemmanager -ofono -resolvconf -ppp
