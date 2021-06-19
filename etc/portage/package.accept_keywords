@@ -9,3 +9,4 @@ sys-process/bashtop ~amd64
 games-fps/gzdoom ~amd64
 media-libs/zmusic ~amd64
 games-action/minecraft-launcher ~amd64
+x11-themes/gruvbox-material-gtk-theme ~amd64
