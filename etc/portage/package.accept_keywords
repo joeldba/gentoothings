@@ -1,11 +1,10 @@
 media-video/obs-studio ~amd64
-lxde-base/lxappearance ~amd64
-net-im/discord-bin ~amd64
-x11-themes/kvantum ~amd64
-games-util/steam-launcher ~amd64
-games-util/game-device-udev-rules ~amd64
-sys-process/bashtop ~amd64
 games-fps/gzdoom ~amd64
+lxde-base/lxappearance ~amd64
+x11-themes/kvantum ~amd64
+games-action/multimc ~amd64
 media-libs/zmusic ~amd64
-games-action/minecraft-launcher ~amd64
+games-util/steam-launcher ~amd64
+net-im/discord-bin ~amd64
+games-util/game-device-udev-rules ~amd64
 x11-themes/gruvbox-material-gtk-theme ~amd64

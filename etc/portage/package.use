@@ -1,48 +1,152 @@
-media-sound/audacity -ogg -vorbis -portmidi -portsmf
-app-admin/doas persist
-media-gfx/gimp -aqua -lua -javascript -python -vala -wmf -libmng -alsa
-dev-vcs/git -tk -xinetd -subversion -ppcshal -perl -pcre
-media-sound/mpd fifo -cdio -cue -curl -gme -mms -nfs -sid -soundcloud -vorbis -zip -wildmidi -opus -faad -fluidsynth -network -samba -upnp -udisks
-media-video/mpv -aqua -coreaudio -dvd -gamepad -javascript -jpeg -libcaca 
-media-sound/ncmpcpp visualizer
+app-editors/vim -X -cscope -gpm -lua -perl -python -racket -ruby -sound -tcl -vim-pager
+dev-vcs/git -pcre -perl -tk -xinetd
+net-misc/networkmanager -connection-sharing -modemmanager -ofono -ovs -ppp -resolvconf -teamd -vala
+app-portage/layman -squashfs -g-sorcery
+x11-base/xorg-server -dmx -kdrive -xephyr -xnest -xvfb
 app-misc/neofetch -w3m -X
-media-video/obs-studio -lua -fdk -jack -python
-media-sound/pulseaudio X -native-headset -ofono-headset
-app-editors/vim -lua -perl -racket -ruby -sound 
-app-emulation/virtualbox -lvm -opus -python 
+www-client/firefox clang -screencast -sndio
+media-video/obs-studio -lua -perl -jack -python
+media-gfx/gimp -aqua -lua -javascript -python -vala -wmf -libmng -alsa
+media-sound/mpd fifo -cdio -cue -curl -gme -mms -nfs -sid -soundcloud -vorbis -zip -wildmidi -opus -faad -fluidsynth -network -samba -upnp -udisks
+media-video/mpv -aqua -coreaudio -dvd -gamepad -javascript -jpeg -libcaca
+media-sound/ncmpcpp visualizer
+media-sound/pulseaudio -native-headset -ofono-headset
+app-emulation/virtualbox qt5 -lvm -opus -python
 app-shells/zsh -pcre -maildir -examples
-games-misc/fortune-mod offensive
-net-wireless/wpa-supplicant -qt5 -smartcard -eap-sim
-media-gfx/feh -curl -inotify
 app-portage/eix -sqlite
-www-client/firefox clang -sndio -screencast
-# required by x11-drivers/nvidia-drivers (argument)
+media-sound/audacity -ogg -vorbis -portmidi -portsmf
+games-fps/gzdoom gtk
+app-office/libreoffice gtk -googledrive -java -mariadb -branding
+sys-process/htop lm-sensors
+# required by sys-boot/os-prober-1.78::gentoo
+# required by os-prober (argument)
+>=sys-boot/grub-2.06 mount
+# required by x11-libs/pango-1.48.7::gentoo
+# required by media-gfx/fontforge-20201107::gentoo[-gtk,-test,X]
+# required by app-office/libreoffice-7.1.3.2::gentoo
+# required by libreoffice (argument)
+>=media-libs/freetype-2.10.4 harfbuzz
+# required by app-office/libreoffice-7.1.3.2::gentoo
+# required by libreoffice (argument)
+>=dev-libs/boost-1.76.0-r1 nls
+# required by x11-drivers/nvidia-drivers-460.91.03::gentoo[X]
+# required by x11-base/xorg-drivers-1.20-r2::gentoo[video_cards_nvidia]
+# required by x11-base/xorg-server-1.20.11::gentoo[xorg]
+# required by x11-drivers/xf86-input-libinput-1.1.0::gentoo
 >=media-libs/libglvnd-1.3.3 abi_x86_32
->=x11-libs/libX11-1.7.1 abi_x86_32
+# required by x11-libs/libXext-1.3.4::gentoo
+# required by media-libs/imlib2-1.6.1::gentoo[X]
+# required by media-gfx/sxiv-26::gentoo
+# required by sxiv (argument)
+>=x11-libs/libX11-1.7.2 abi_x86_32
+# required by media-libs/libglvnd-1.3.3::gentoo[X]
+# required by x11-drivers/nvidia-drivers-460.91.03::gentoo[X]
+# required by x11-base/xorg-drivers-1.20-r2::gentoo[video_cards_nvidia]
+# required by x11-base/xorg-server-1.20.11::gentoo[xorg]
+# required by x11-drivers/xf86-input-libinput-1.1.0::gentoo
 >=x11-libs/libXext-1.3.4 abi_x86_32
+# required by x11-libs/libX11-1.7.2::gentoo
+# required by media-video/obs-studio-27.0.1::gentoo
+# required by obs-studio (argument)
 >=x11-libs/libxcb-1.14 abi_x86_32
+# required by x11-libs/libxcb-1.14::gentoo
+# required by media-video/obs-studio-27.0.1::gentoo
+# required by obs-studio (argument)
 >=x11-libs/libXau-1.0.9-r1 abi_x86_32
+# required by x11-libs/libxcb-1.14::gentoo
+# required by media-video/obs-studio-27.0.1::gentoo
+# required by obs-studio (argument)
 >=x11-libs/libXdmcp-1.1.3 abi_x86_32
+# required by x11-libs/libxcb-1.14::gentoo
+# required by media-video/obs-studio-27.0.1::gentoo
+# required by obs-studio (argument)
 >=x11-base/xcb-proto-1.14.1 abi_x86_32
-# required by games-util/steam-launcher (argument)
->=virtual/opengl-7.0-r2 abi_x86_32
->=media-libs/mesa-21.0.3 abi_x86_32
->=dev-libs/expat-2.4.1 abi_x86_32
->=sys-libs/zlib-1.2.11-r4 abi_x86_32
->=x11-libs/libdrm-2.4.105 abi_x86_32
->=x11-libs/libxshmfence-1.3-r2 abi_x86_32
->=x11-libs/libXxf86vm-1.1.4-r2 abi_x86_32
->=x11-libs/libXfixes-6.0.0 abi_x86_32
->=app-arch/zstd-1.4.9 abi_x86_32
->=sys-devel/llvm-11.1.0 abi_x86_32
->=x11-libs/libXrandr-1.5.2 abi_x86_32
->=x11-libs/libXrender-0.9.10-r2 abi_x86_32
->=dev-libs/libffi-3.3-r2 abi_x86_32
->=sys-libs/ncurses-6.2-r1 abi_x86_32
->=dev-libs/libxml2-2.9.12-r2 abi_x86_32
-=sys-libs/ncurses-6.2-r1 abi_x86_32
->=sys-libs/gpm-1.20.7-r3 abi_x86_32
->=dev-libs/icu-69.1 abi_x86_32
-# required by www-client/firefox-78.11.0::gentoo[system-libvpx]
+# required by www-client/firefox-78.12.0::gentoo[system-libvpx]
 # required by firefox (argument)
 >=media-libs/libvpx-1.10.0 postproc
+# required by net-print/cups-filters-1.28.7::gentoo[postscript]
+# required by net-print/cups-2.3.3_p2-r2::gentoo
+# required by net-im/discord-bin-0.0.15::gentoo
+# required by discord-bin (argument)
+>=app-text/ghostscript-gpl-9.53.3-r5 cups
+# required by games-util/steam-launcher-1.0.0.70::steam-overlay[steamruntime]
+# required by steam-launcher (argument)
+>=virtual/opengl-7.0-r2 abi_x86_32
+# required by virtual/opengl-7.0-r2::gentoo
+# required by media-libs/freeglut-3.2.1-r1::gentoo
+# required by media-libs/libwebp-1.1.0::gentoo[opengl]
+# required by www-client/firefox-78.12.0::gentoo[system-webp]
+# required by firefox (argument)
+>=media-libs/mesa-21.1.4 abi_x86_32
+# required by media-libs/mesa-21.1.4::gentoo
+# required by x11-libs/gtk+-3.24.29::gentoo[X]
+# required by gnome-extra/zenity-3.32.0::gentoo
+# required by games-util/steam-launcher-1.0.0.70::steam-overlay
+# required by steam-launcher (argument)
+>=dev-libs/expat-2.4.1 abi_x86_32
+# required by sys-devel/llvm-12.0.0::gentoo
+# required by sys-devel/clang-12.0.0-r1::gentoo[llvm_targets_BPF]
+# required by sys-devel/clang-common-12.0.0::gentoo
+>=sys-libs/zlib-1.2.11-r4 abi_x86_32
+# required by media-libs/mesa-21.1.4::gentoo
+# required by x11-libs/gtk+-3.24.29::gentoo[X]
+# required by gnome-extra/zenity-3.32.0::gentoo
+# required by games-util/steam-launcher-1.0.0.70::steam-overlay
+# required by steam-launcher (argument)
+>=x11-libs/libdrm-2.4.106 abi_x86_32
+# required by media-libs/mesa-21.1.4::gentoo[X]
+# required by x11-libs/gtk+-3.24.29::gentoo[X]
+# required by gnome-extra/zenity-3.32.0::gentoo
+# required by games-util/steam-launcher-1.0.0.70::steam-overlay
+# required by steam-launcher (argument)
+>=x11-libs/libxshmfence-1.3-r2 abi_x86_32
+# required by media-libs/mesa-21.1.4::gentoo[X]
+# required by x11-libs/gtk+-3.24.29::gentoo[X]
+# required by gnome-extra/zenity-3.32.0::gentoo
+# required by games-util/steam-launcher-1.0.0.70::steam-overlay
+# required by steam-launcher (argument)
+>=x11-libs/libXxf86vm-1.1.4-r2 abi_x86_32
+# required by media-libs/mesa-21.1.4::gentoo[X]
+# required by x11-libs/gtk+-3.24.29::gentoo[X]
+# required by gnome-extra/zenity-3.32.0::gentoo
+# required by games-util/steam-launcher-1.0.0.70::steam-overlay
+# required by steam-launcher (argument)
+>=x11-libs/libXfixes-6.0.0 abi_x86_32
+# required by media-libs/mesa-21.1.4::gentoo[zstd]
+# required by x11-libs/gtk+-3.24.29::gentoo[X]
+# required by gnome-extra/zenity-3.32.0::gentoo
+# required by games-util/steam-launcher-1.0.0.70::steam-overlay
+# required by steam-launcher (argument)
+>=app-arch/zstd-1.5.0 abi_x86_32
+# required by media-libs/mesa-21.1.4::gentoo[-video_cards_radeonsi,-opencl,gallium,-video_cards_radeon,llvm,-video_cards_r600]
+# required by x11-libs/gtk+-3.24.29::gentoo[X]
+# required by gnome-extra/zenity-3.32.0::gentoo
+# required by games-util/steam-launcher-1.0.0.70::steam-overlay
+# required by steam-launcher (argument)
+>=sys-devel/llvm-12.0.0 abi_x86_32
+# required by media-libs/mesa-21.1.4::gentoo[X]
+# required by x11-libs/gtk+-3.24.29::gentoo[X]
+# required by gnome-extra/zenity-3.32.0::gentoo
+# required by games-util/steam-launcher-1.0.0.70::steam-overlay
+# required by steam-launcher (argument)
+>=x11-libs/libXrandr-1.5.2 abi_x86_32
+# required by x11-libs/libXrandr-1.5.2::gentoo
+# required by app-office/libreoffice-7.1.3.2::gentoo
+# required by libreoffice (argument)
+>=x11-libs/libXrender-0.9.10-r2 abi_x86_32
+# required by sys-devel/llvm-12.0.0::gentoo[libffi]
+# required by sys-devel/clang-12.0.0-r1::gentoo[llvm_targets_BPF]
+# required by sys-devel/clang-common-12.0.0::gentoo
+>=dev-libs/libffi-3.3-r2 abi_x86_32
+# required by sys-devel/llvm-12.0.0::gentoo[ncurses]
+# required by sys-devel/clang-12.0.0-r1::gentoo[llvm_targets_BPF]
+# required by sys-devel/clang-common-12.0.0::gentoo
+>=sys-libs/ncurses-6.2-r1 abi_x86_32
+# required by sys-devel/llvm-12.0.0::gentoo[xml]
+# required by sys-devel/clang-12.0.0-r1::gentoo[llvm_targets_BPF]
+# required by sys-devel/clang-common-12.0.0::gentoo
+>=dev-libs/libxml2-2.9.12-r3 abi_x86_32
+# required by dev-libs/libxml2-2.9.12-r3::gentoo[icu]
+# required by sys-devel/clang-12.0.0-r1::gentoo[xml]
+# required by sys-devel/clang-common-12.0.0::gentoo
+>=dev-libs/icu-69.1 abi_x86_32
