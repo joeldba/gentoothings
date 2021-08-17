@@ -8,3 +8,4 @@ games-util/steam-launcher ~amd64
 net-im/discord-bin ~amd64
 games-util/game-device-udev-rules ~amd64
 x11-themes/gruvbox-material-gtk-theme ~amd64
+games-fps/openarena ~amd64

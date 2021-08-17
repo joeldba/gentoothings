@@ -18,6 +18,9 @@ media-sound/audacity -ogg -vorbis -portmidi -portsmf
 games-fps/gzdoom gtk
 app-office/libreoffice gtk -googledrive -java -mariadb -branding
 sys-process/htop lm-sensors
+media-libs/opencv qt5
+kde-apps/kdenlive qt5
+media-gfx/imagemagick -pango -heif -hdri -fpx -webp -tiff -lzma -djvu -zlib -wmf -raw -perl 
 # required by sys-boot/os-prober-1.78::gentoo
 # required by os-prober (argument)
 >=sys-boot/grub-2.06 mount
@@ -150,3 +153,6 @@ sys-process/htop lm-sensors
 # required by sys-devel/clang-12.0.0-r1::gentoo[xml]
 # required by sys-devel/clang-common-12.0.0::gentoo
 >=dev-libs/icu-69.1 abi_x86_32
+# required by kde-apps/kdenlive-21.04.3-r1::gentoo
+# required by kdenlive (argument)
+>=media-libs/mlt-6.26.1-r1 frei0r qt5 ffmpeg
