@@ -1,13 +1,12 @@
-app-editors/vim -X -cscope -gpm -lua -perl -python -racket -ruby -sound -tcl -vim-pager
+app-editors/vim -X -cscope -lua -perl -python -racket -ruby -sound -tcl -vim-pager
 dev-vcs/git -pcre -perl -tk -xinetd
 net-misc/networkmanager -connection-sharing -modemmanager -ofono -ovs -ppp -resolvconf -teamd -vala
 app-portage/layman -squashfs -g-sorcery
 x11-base/xorg-server -dmx -kdrive -xephyr -xnest -xvfb
-app-misc/neofetch -w3m -X
 www-client/firefox clang -screencast -sndio
 media-video/obs-studio -lua -perl -jack -python
 media-gfx/gimp -aqua -lua -javascript -python -vala -wmf -libmng -alsa
-media-sound/mpd fifo -cdio -cue -curl -gme -mms -nfs -sid -soundcloud -vorbis -zip -wildmidi -opus -faad -fluidsynth -network -samba -upnp -udisks
+media-sound/mpd fifo -cue -curl -gme -mms -nfs -sid -soundcloud -vorbis -zip -wildmidi -opus -faad -fluidsynth -network -samba -upnp -udisks
 media-video/mpv -aqua -coreaudio -dvd -gamepad -javascript -jpeg -libcaca
 media-sound/ncmpcpp visualizer
 media-sound/pulseaudio -native-headset -ofono-headset
@@ -21,6 +20,9 @@ sys-process/htop lm-sensors
 media-libs/opencv qt5
 kde-apps/kdenlive qt5
 media-gfx/imagemagick -pango -heif -hdri -fpx -webp -tiff -lzma -djvu -zlib -wmf -raw -perl 
+sys-libs/ncurses -gpm
+sys-firmware/intel-microcode initramfs
+games-action/supertuxkart -wiimote
 # required by sys-boot/os-prober-1.78::gentoo
 # required by os-prober (argument)
 >=sys-boot/grub-2.06 mount
@@ -156,3 +158,19 @@ media-gfx/imagemagick -pango -heif -hdri -fpx -webp -tiff -lzma -djvu -zlib -wmf
 # required by kde-apps/kdenlive-21.04.3-r1::gentoo
 # required by kdenlive (argument)
 >=media-libs/mlt-6.26.1-r1 frei0r qt5 ffmpeg
+# required by sys-libs/ncurses-6.2-r1::gentoo[gpm]
+# required by sys-devel/llvm-12.0.1::gentoo[ncurses]
+# required by media-libs/mesa-21.1.7::gentoo[-opencl,llvm,gallium,-video_cards_radeon,-video_cards_r600,-video_cards_radeonsi]
+# required by x11-libs/cairo-1.16.0-r4::gentoo[opengl]
+# required by media-libs/harfbuzz-2.8.2-r1::gentoo[cairo]
+# required by media-libs/freetype-2.10.4::gentoo[harfbuzz]
+# required by sys-boot/grub-2.06::gentoo[fonts,themes]
+# required by @selected
+# required by @world (argument)
+>=sys-libs/gpm-1.20.7-r3 abi_x86_32
+# required by app-misc/neofetch-7.1.0::gentoo[X]
+# required by neofetch (argument)
+>=www-client/w3m-0.5.3_p20210102 imlib
+# required by sys-boot/woeusb-3.3.1::gentoo
+# required by woeusb (argument)
+>=sys-boot/grub-2.06-r1 grub_platforms_pc

@@ -9,3 +9,11 @@ net-im/discord-bin ~amd64
 games-util/game-device-udev-rules ~amd64
 x11-themes/gruvbox-material-gtk-theme ~amd64
 games-fps/openarena ~amd64
+app-shells/zsh-autosuggestions ~amd64
+games-fps/quakespasm ~amd64
+games-fps/yamagi-quake2 ~amd64
+games-action/supertuxkart ~amd64
+dev-libs/angelscript ~amd64
+sys-process/bpytop ~amd64
+app-shells/thefuck ~amd64
+sys-apps/bat ~amd64
