@@ -3,6 +3,7 @@ dev-vcs/git -pcre -perl -tk -xinetd
 net-misc/networkmanager -connection-sharing -modemmanager -ofono -ovs -ppp -resolvconf -teamd -vala
 app-portage/layman -squashfs -g-sorcery
 x11-base/xorg-server -dmx -kdrive -xephyr -xnest -xvfb
+x11-terms/rxvt-unicode xft 2560color
 www-client/firefox clang -screencast -sndio
 media-video/obs-studio -lua -perl -jack -python
 media-gfx/gimp -aqua -lua -javascript -python -vala -wmf -libmng -alsa
@@ -23,6 +24,9 @@ media-gfx/imagemagick -pango -heif -hdri -fpx -webp -tiff -lzma -djvu -zlib -wmf
 sys-libs/ncurses -gpm
 sys-firmware/intel-microcode initramfs
 games-action/supertuxkart -wiimote
+app-admin/conky -apcupsd -cmus -ical -intel-backlight -irc -lua-cairo -lua-imlib -lua-rsvg -thinkpad 
+x11-misc/nitrogen nls
+x11-misc/redshift -appindicator -geoclue
 # required by sys-boot/os-prober-1.78::gentoo
 # required by os-prober (argument)
 >=sys-boot/grub-2.06 mount
