@@ -1,4 +1,4 @@
-app-editors/vim -X -cscope -lua -perl -python -racket -ruby -sound -tcl -vim-pager
+app-editors/vim -X -cscope -lua -perl -python -racket -ruby -sound -vim-pager
 dev-vcs/git -pcre -perl -tk -xinetd
 net-misc/networkmanager -connection-sharing -modemmanager -ofono -ovs -ppp -resolvconf -teamd -vala
 app-portage/layman -squashfs -g-sorcery
@@ -6,9 +6,9 @@ x11-base/xorg-server -dmx -kdrive -xephyr -xnest -xvfb
 x11-terms/rxvt-unicode xft 2560color
 www-client/firefox clang -screencast -sndio
 media-video/obs-studio -lua -perl -jack -python
-media-gfx/gimp -aqua -lua -javascript -python -vala -wmf -libmng -alsa
-media-sound/mpd fifo -cue -curl -gme -mms -nfs -sid -soundcloud -vorbis -zip -wildmidi -opus -faad -fluidsynth -network -samba -upnp -udisks
-media-video/mpv -aqua -coreaudio -dvd -gamepad -javascript -jpeg -libcaca
+media-gfx/gimp -lua -javascript -python -vala -wmf -libmng -alsa
+media-sound/mpd fifo -cue -curl -gme -mms -nfs -sid -soundcloud -zip -wildmidi -opus -faad -fluidsynth -network -samba -upnp -udisks
+media-video/mpv -gamepad -javascript -jpeg -libcaca
 media-sound/ncmpcpp visualizer
 media-sound/pulseaudio -native-headset -ofono-headset
 app-emulation/virtualbox qt5 -lvm -opus -python
@@ -16,17 +16,17 @@ app-shells/zsh -pcre -maildir -examples
 app-portage/eix -sqlite
 media-sound/audacity -ogg -vorbis -portmidi -portsmf
 games-fps/gzdoom gtk
-app-office/libreoffice gtk -googledrive -java -mariadb -branding
+app-office/libreoffice gtk -googledrive -java -mariadb 
 sys-process/htop lm-sensors
 media-libs/opencv qt5
 kde-apps/kdenlive qt5
-media-gfx/imagemagick -pango -heif -hdri -fpx -webp -tiff -lzma -djvu -zlib -wmf -raw -perl 
+media-gfx/imagemagick -pango -heif -hdri -fpx -lzma -djvu -zlib -wmf -raw -perl 
 sys-libs/ncurses -gpm
 sys-firmware/intel-microcode initramfs
 games-action/supertuxkart -wiimote
 app-admin/conky -apcupsd -cmus -ical -intel-backlight -irc -lua-cairo -lua-imlib -lua-rsvg -thinkpad 
 x11-misc/nitrogen nls
-x11-misc/redshift -appindicator -geoclue
+x11-misc/redshift -geoclue
 # required by sys-boot/os-prober-1.78::gentoo
 # required by os-prober (argument)
 >=sys-boot/grub-2.06 mount
