@@ -27,6 +27,7 @@ games-action/supertuxkart -wiimote
 app-admin/conky -apcupsd -cmus -ical -intel-backlight -irc -lua-cairo -lua-imlib -lua-rsvg -thinkpad 
 x11-misc/nitrogen nls
 x11-misc/redshift -geoclue
+x11-drivers/nvidia-drivers abi_x86_64 abi_x86_32
 # required by sys-boot/os-prober-1.78::gentoo
 # required by os-prober (argument)
 >=sys-boot/grub-2.06 mount
